@@ -1,12 +1,10 @@
-import ThemeToggle from "@/components/theme-toggle"
+import Navbar from "@/components/navbar"
+import { navLinks } from "@/constants/navigation"
 
 const Layout = ( { children } : { children: React.ReactNode } ) => {
   return (
     <div>
-        <div className="flex items-center justify-between">
-          <h1>Navbar</h1>
-          <ThemeToggle />
-        </div>
+        <Navbar title="Next.js Demo" links={navLinks} />
         {children}
     </div>
   )
